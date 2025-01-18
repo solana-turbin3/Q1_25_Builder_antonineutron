@@ -16,13 +16,17 @@ umi.use(signerIdentity(signer));
 (async () => {
     try {
         //1. Load image
+        const image = await readFile("generug.png")
+        
         //2. Convert image to generic file.
+        const generic_file = createGenericFile(image, 'generug.png', {
+            displayName: 'ANTRUGgr',
+            contentType: 'image/png'
+        });
+
         //3. Upload image
-
-        // const image = ???
-
-        // const [myUri] = ??? 
-        // console.log("Your image URI: ", myUri);
+        const [myUri] = await umi.uploader.upload([generic_file]);
+        console.log("Your image URI:", myUri);
     }
     catch(error) {
         console.log("Oops.. Something went wrong", error);
