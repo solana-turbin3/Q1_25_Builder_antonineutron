@@ -125,7 +125,7 @@ impl<'info> Payment<'info> {
 
 #[derive(Accounts)]
 pub struct Close<'info>{
-    #[account()]
+    #[account(mut)]
     pub user: Signer<'info>,
     #[account(
         mut,
@@ -164,7 +164,7 @@ impl <'info> Close <'info> {
 
         let amount = self.vault.lamports();
 
-        transfer(cpi_ctx, amount)?;
+        let _ = transfer(cpi_ctx, amount)?;
         Ok(())
     }
 }
