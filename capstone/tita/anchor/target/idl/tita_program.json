@@ -1,0 +1,807 @@
+{
+  "address": "8PJFAdH2RJ2v1zdME3HU477yvHf7LRheLWd3xxeSbrsZ",
+  "metadata": {
+    "name": "tita_program",
+    "version": "0.1.0",
+    "spec": "0.1.0",
+    "description": "Created with Anchor"
+  },
+  "instructions": [
+    {
+      "name": "close_campaign",
+      "discriminator": [
+        65,
+        49,
+        110,
+        7,
+        63,
+        238,
+        206,
+        77
+      ],
+      "accounts": [
+        {
+          "name": "grant_campaign",
+          "writable": true
+        },
+        {
+          "name": "campaign_vault",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "account",
+                "path": "grant_campaign"
+              },
+              {
+                "kind": "account",
+                "path": "token_mint"
+              }
+            ]
+          }
+        },
+        {
+          "name": "provider_token_account",
+          "writable": true
+        },
+        {
+          "name": "grant_provider",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "token_mint"
+        },
+        {
+          "name": "token_program"
+        },
+        {
+          "name": "system_program",
+          "address": "11111111111111111111111111111111"
+        }
+      ],
+      "args": []
+    },
+    {
+      "name": "create_campaign",
+      "discriminator": [
+        111,
+        131,
+        187,
+        98,
+        160,
+        193,
+        114,
+        244
+      ],
+      "accounts": [
+        {
+          "name": "grant_provider",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "provider_token_account",
+          "writable": true
+        },
+        {
+          "name": "grant_campaign",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "arg",
+                "path": "campaign_id"
+              },
+              {
+                "kind": "account",
+                "path": "grant_provider"
+              }
+            ]
+          }
+        },
+        {
+          "name": "campaign_vault",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "account",
+                "path": "grant_campaign"
+              },
+              {
+                "kind": "account",
+                "path": "token_mint"
+              }
+            ]
+          }
+        },
+        {
+          "name": "token_mint"
+        },
+        {
+          "name": "token_program"
+        },
+        {
+          "name": "system_program",
+          "address": "11111111111111111111111111111111"
+        }
+      ],
+      "args": [
+        {
+          "name": "campaign_id",
+          "type": "string"
+        },
+        {
+          "name": "total_funding",
+          "type": "u64"
+        },
+        {
+          "name": "deadline",
+          "type": {
+            "option": "i64"
+          }
+        }
+      ]
+    },
+    {
+      "name": "create_milestone",
+      "discriminator": [
+        239,
+        58,
+        201,
+        28,
+        40,
+        186,
+        173,
+        48
+      ],
+      "accounts": [
+        {
+          "name": "applicant",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "milestone",
+          "writable": true
+        },
+        {
+          "name": "proposal",
+          "writable": true
+        },
+        {
+          "name": "grant_campaign",
+          "writable": true
+        },
+        {
+          "name": "system_program",
+          "address": "11111111111111111111111111111111"
+        }
+      ],
+      "args": [
+        {
+          "name": "milestone_id",
+          "type": "u8"
+        },
+        {
+          "name": "amount",
+          "type": "u64"
+        },
+        {
+          "name": "proof_uri",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "create_proposal",
+      "discriminator": [
+        132,
+        116,
+        68,
+        174,
+        216,
+        160,
+        198,
+        22
+      ],
+      "accounts": [
+        {
+          "name": "applicant",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "proposal",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "account",
+                "path": "grant_campaign"
+              },
+              {
+                "kind": "account",
+                "path": "applicant"
+              }
+            ]
+          }
+        },
+        {
+          "name": "proposal_vault",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "account",
+                "path": "proposal"
+              },
+              {
+                "kind": "account",
+                "path": "token_mint"
+              }
+            ]
+          }
+        },
+        {
+          "name": "grant_campaign"
+        },
+        {
+          "name": "token_mint"
+        },
+        {
+          "name": "token_program"
+        },
+        {
+          "name": "system_program",
+          "address": "11111111111111111111111111111111"
+        }
+      ],
+      "args": [
+        {
+          "name": "proposal_id",
+          "type": "string"
+        },
+        {
+          "name": "deadline",
+          "type": {
+            "option": "i64"
+          }
+        },
+        {
+          "name": "ask_amount",
+          "type": "u64"
+        }
+      ]
+    },
+    {
+      "name": "set_milestone_status",
+      "discriminator": [
+        67,
+        151,
+        224,
+        85,
+        107,
+        200,
+        42,
+        96
+      ],
+      "accounts": [
+        {
+          "name": "grant_provider",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "milestone",
+          "writable": true
+        },
+        {
+          "name": "proposal"
+        },
+        {
+          "name": "grant_campaign"
+        },
+        {
+          "name": "proposal_vault",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "account",
+                "path": "proposal"
+              },
+              {
+                "kind": "account",
+                "path": "token_mint"
+              }
+            ]
+          }
+        },
+        {
+          "name": "recipient",
+          "writable": true
+        },
+        {
+          "name": "token_mint"
+        },
+        {
+          "name": "token_program"
+        }
+      ],
+      "args": [
+        {
+          "name": "status",
+          "type": {
+            "defined": {
+              "name": "MilestoneStatus"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "submit_proof",
+      "discriminator": [
+        54,
+        241,
+        46,
+        84,
+        4,
+        212,
+        46,
+        94
+      ],
+      "accounts": [
+        {
+          "name": "milestone",
+          "writable": true
+        },
+        {
+          "name": "proposal"
+        },
+        {
+          "name": "applicant",
+          "writable": true,
+          "signer": true
+        }
+      ],
+      "args": [
+        {
+          "name": "proof_uri",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "update_campaign",
+      "discriminator": [
+        235,
+        31,
+        39,
+        49,
+        121,
+        173,
+        19,
+        92
+      ],
+      "accounts": [
+        {
+          "name": "grant_campaign",
+          "writable": true
+        },
+        {
+          "name": "grant_provider",
+          "writable": true,
+          "signer": true
+        }
+      ],
+      "args": [
+        {
+          "name": "total_funding",
+          "type": "u64"
+        },
+        {
+          "name": "is_active",
+          "type": "bool"
+        }
+      ]
+    },
+    {
+      "name": "update_proposal_status",
+      "discriminator": [
+        9,
+        171,
+        178,
+        233,
+        228,
+        50,
+        167,
+        206
+      ],
+      "accounts": [
+        {
+          "name": "grant_provider",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "proposal",
+          "writable": true
+        },
+        {
+          "name": "grant_campaign"
+        },
+        {
+          "name": "campaign_vault",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "account",
+                "path": "grant_campaign"
+              },
+              {
+                "kind": "account",
+                "path": "token_mint"
+              }
+            ]
+          }
+        },
+        {
+          "name": "proposal_vault",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "account",
+                "path": "proposal"
+              },
+              {
+                "kind": "account",
+                "path": "token_mint"
+              }
+            ]
+          }
+        },
+        {
+          "name": "token_mint"
+        },
+        {
+          "name": "token_program"
+        }
+      ],
+      "args": [
+        {
+          "name": "status",
+          "type": {
+            "defined": {
+              "name": "ProposalStatus"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "withdraw_from_proposal",
+      "discriminator": [
+        0,
+        44,
+        63,
+        88,
+        127,
+        5,
+        188,
+        218
+      ],
+      "accounts": [
+        {
+          "name": "proposal",
+          "writable": true
+        },
+        {
+          "name": "grant_campaign"
+        },
+        {
+          "name": "grant_provider",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "proposal_vault",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "account",
+                "path": "proposal"
+              },
+              {
+                "kind": "account",
+                "path": "token_mint"
+              }
+            ]
+          }
+        },
+        {
+          "name": "provider_token_account",
+          "writable": true
+        },
+        {
+          "name": "token_mint"
+        },
+        {
+          "name": "token_program"
+        }
+      ],
+      "args": []
+    }
+  ],
+  "accounts": [
+    {
+      "name": "GrantCampaign",
+      "discriminator": [
+        131,
+        57,
+        47,
+        16,
+        77,
+        141,
+        235,
+        222
+      ]
+    },
+    {
+      "name": "Milestone",
+      "discriminator": [
+        38,
+        210,
+        239,
+        177,
+        85,
+        184,
+        10,
+        44
+      ]
+    },
+    {
+      "name": "Proposal",
+      "discriminator": [
+        26,
+        94,
+        189,
+        187,
+        116,
+        136,
+        53,
+        33
+      ]
+    }
+  ],
+  "errors": [
+    {
+      "code": 6000,
+      "name": "InsufficientFunds",
+      "msg": "Insufficient funds for your ask"
+    },
+    {
+      "code": 6001,
+      "name": "CalculationError",
+      "msg": "An error occured while calculating balance"
+    },
+    {
+      "code": 6002,
+      "name": "NoRemainingFunds",
+      "msg": "No remaining funds"
+    },
+    {
+      "code": 6003,
+      "name": "OnlyGrantProviderCanApproveMilestone",
+      "msg": "Only grant provider can approve or reject milestone"
+    },
+    {
+      "code": 6004,
+      "name": "DeadlineNotExceeded",
+      "msg": "Deadline not exceeded"
+    },
+    {
+      "code": 6005,
+      "name": "NoDeadlineSet",
+      "msg": "No deadline set"
+    },
+    {
+      "code": 6006,
+      "name": "DeadlineExceeded",
+      "msg": "Deadline exceeded"
+    },
+    {
+      "code": 6007,
+      "name": "InvalidStatusTransition",
+      "msg": "Invalid status transition"
+    }
+  ],
+  "types": [
+    {
+      "name": "GrantCampaign",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "campaign_id",
+            "type": "string"
+          },
+          {
+            "name": "total_funding",
+            "type": "u64"
+          },
+          {
+            "name": "remaining_funding",
+            "type": "u64"
+          },
+          {
+            "name": "is_active",
+            "type": "bool"
+          },
+          {
+            "name": "created_at",
+            "type": "i64"
+          },
+          {
+            "name": "updated_at",
+            "type": "i64"
+          },
+          {
+            "name": "deadline",
+            "type": {
+              "option": "i64"
+            }
+          },
+          {
+            "name": "bump",
+            "type": "u8"
+          },
+          {
+            "name": "grant_provider",
+            "type": "pubkey"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Milestone",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "milestone_id",
+            "type": "u8"
+          },
+          {
+            "name": "proposal",
+            "type": "pubkey"
+          },
+          {
+            "name": "amount",
+            "type": "u64"
+          },
+          {
+            "name": "created_at",
+            "type": "i64"
+          },
+          {
+            "name": "updated_at",
+            "type": "i64"
+          },
+          {
+            "name": "bump",
+            "type": "u8"
+          },
+          {
+            "name": "proof_uri",
+            "type": "string"
+          },
+          {
+            "name": "status",
+            "type": {
+              "defined": {
+                "name": "MilestoneStatus"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "MilestoneStatus",
+      "type": {
+        "kind": "enum",
+        "variants": [
+          {
+            "name": "Pending"
+          },
+          {
+            "name": "Completed"
+          },
+          {
+            "name": "Approved"
+          },
+          {
+            "name": "Rejected"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Proposal",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "proposal_id",
+            "type": "string"
+          },
+          {
+            "name": "grant_campaign",
+            "type": "pubkey"
+          },
+          {
+            "name": "applicant",
+            "type": "pubkey"
+          },
+          {
+            "name": "status",
+            "type": {
+              "defined": {
+                "name": "ProposalStatus"
+              }
+            }
+          },
+          {
+            "name": "ask_amount",
+            "type": "u64"
+          },
+          {
+            "name": "token_mint",
+            "type": "pubkey"
+          },
+          {
+            "name": "deadline",
+            "type": {
+              "option": "i64"
+            }
+          },
+          {
+            "name": "created_at",
+            "type": "i64"
+          },
+          {
+            "name": "updated_at",
+            "type": "i64"
+          },
+          {
+            "name": "bump",
+            "type": "u8"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ProposalStatus",
+      "type": {
+        "kind": "enum",
+        "variants": [
+          {
+            "name": "Pending"
+          },
+          {
+            "name": "Approved"
+          },
+          {
+            "name": "Rejected"
+          }
+        ]
+      }
+    }
+  ]
+}

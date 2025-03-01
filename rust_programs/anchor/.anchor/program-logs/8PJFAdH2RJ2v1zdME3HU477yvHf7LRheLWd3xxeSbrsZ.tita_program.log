@@ -1,0 +1,218 @@
+Streaming transaction logs mentioning 8PJFAdH2RJ2v1zdME3HU477yvHf7LRheLWd3xxeSbrsZ. Confirmed commitment
+Transaction executed in slot 58:
+  Signature: 5TEhcm4fNXfAoQL5SEEQ4tC9etByc48fnvcpy6GJMRpW18phUAnqmB22LFJfR8Mh6QmhQ8Eqa2cftv7nyBfKDTTz
+  Status: Ok
+  Log Messages:
+    Program 8PJFAdH2RJ2v1zdME3HU477yvHf7LRheLWd3xxeSbrsZ invoke [1]
+    Program log: Instruction: CreateCampaign
+    Program 11111111111111111111111111111111 invoke [2]
+    Program 11111111111111111111111111111111 success
+    Program 11111111111111111111111111111111 invoke [2]
+    Program 11111111111111111111111111111111 success
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]
+    Program log: Instruction: InitializeAccount3
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 4214 of 179710 compute units
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]
+    Program log: Instruction: TransferChecked
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 6174 of 170531 compute units
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success
+    Program 8PJFAdH2RJ2v1zdME3HU477yvHf7LRheLWd3xxeSbrsZ consumed 36955 of 200000 compute units
+    Program 8PJFAdH2RJ2v1zdME3HU477yvHf7LRheLWd3xxeSbrsZ success
+Transaction executed in slot 59:
+  Signature: hux5zWbuFyNQduz96ubzMX9oMuPB5oZV8UeaEgWyxveA8Ur2i2X6quCjwCFGen5U9SuCyHxUwgNLJjYrrzSusbu
+  Status: Ok
+  Log Messages:
+    Program 8PJFAdH2RJ2v1zdME3HU477yvHf7LRheLWd3xxeSbrsZ invoke [1]
+    Program log: Instruction: CreateProposal
+    Program 11111111111111111111111111111111 invoke [2]
+    Program 11111111111111111111111111111111 success
+    Program 11111111111111111111111111111111 invoke [2]
+    Program 11111111111111111111111111111111 success
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]
+    Program log: Instruction: InitializeAccount3
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 4214 of 177056 compute units
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success
+    Program 8PJFAdH2RJ2v1zdME3HU477yvHf7LRheLWd3xxeSbrsZ consumed 30816 of 200000 compute units
+    Program 8PJFAdH2RJ2v1zdME3HU477yvHf7LRheLWd3xxeSbrsZ success
+Transaction executed in slot 59:
+  Signature: bFz6Y17uaVxQ1bpW3EJ4LP94feJCtSydMfkTRwpqr48s1V8FcMLzhywNjRuw8ZwLvSZ7Lf6DvyTpaLHcecchUvf
+  Status: Ok
+  Log Messages:
+    Program 8PJFAdH2RJ2v1zdME3HU477yvHf7LRheLWd3xxeSbrsZ invoke [1]
+    Program log: Instruction: CreateMilestone
+    Program 11111111111111111111111111111111 invoke [2]
+    Program 11111111111111111111111111111111 success
+    Program 8PJFAdH2RJ2v1zdME3HU477yvHf7LRheLWd3xxeSbrsZ consumed 18224 of 200000 compute units
+    Program 8PJFAdH2RJ2v1zdME3HU477yvHf7LRheLWd3xxeSbrsZ success
+Transaction executed in slot 60:
+  Signature: bFz6Y17uaVxQ1bpW3EJ4LP94feJCtSydMfkTRwpqr48s1V8FcMLzhywNjRuw8ZwLvSZ7Lf6DvyTpaLHcecchUvf
+  Status: Ok
+  Log Messages:
+    Program 8PJFAdH2RJ2v1zdME3HU477yvHf7LRheLWd3xxeSbrsZ invoke [1]
+    Program log: Instruction: CreateMilestone
+    Program 11111111111111111111111111111111 invoke [2]
+    Program 11111111111111111111111111111111 success
+    Program 8PJFAdH2RJ2v1zdME3HU477yvHf7LRheLWd3xxeSbrsZ consumed 18224 of 200000 compute units
+    Program 8PJFAdH2RJ2v1zdME3HU477yvHf7LRheLWd3xxeSbrsZ success
+Transaction executed in slot 60:
+  Signature: 2JVwEyhwnyeACJfrNcHUbfJgkuM7ohh3RnMWgdMpdZ42RKgubti737s276EbPNqFTmdg52QVg9HnDTPMGKkneTyv
+  Status: Ok
+  Log Messages:
+    Program 8PJFAdH2RJ2v1zdME3HU477yvHf7LRheLWd3xxeSbrsZ invoke [1]
+    Program log: Instruction: UpdateProposalStatus
+    Program log: Expected PDA: ALfiN9FxHZrnuJuFXqs4R6LMm2Xn829V9ZGhrKAoJezh
+    Program log: Expected bump: 255
+    Program log: Stored bump: 255
+    Program log: Campaign ID: CAMPAIGN_001
+    Program log: Grant Provider: 31wLYHeHN5EQTpGwsoYcDr6xXzhj6qxgMErVuXsscMuS
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]
+    Program log: Instruction: TransferChecked
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 6174 of 153944 compute units
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success
+    Program 8PJFAdH2RJ2v1zdME3HU477yvHf7LRheLWd3xxeSbrsZ consumed 53338 of 200000 compute units
+    Program 8PJFAdH2RJ2v1zdME3HU477yvHf7LRheLWd3xxeSbrsZ success
+Transaction executed in slot 61:
+  Signature: 2JVwEyhwnyeACJfrNcHUbfJgkuM7ohh3RnMWgdMpdZ42RKgubti737s276EbPNqFTmdg52QVg9HnDTPMGKkneTyv
+  Status: Ok
+  Log Messages:
+    Program 8PJFAdH2RJ2v1zdME3HU477yvHf7LRheLWd3xxeSbrsZ invoke [1]
+    Program log: Instruction: UpdateProposalStatus
+    Program log: Expected PDA: ALfiN9FxHZrnuJuFXqs4R6LMm2Xn829V9ZGhrKAoJezh
+    Program log: Expected bump: 255
+    Program log: Stored bump: 255
+    Program log: Campaign ID: CAMPAIGN_001
+    Program log: Grant Provider: 31wLYHeHN5EQTpGwsoYcDr6xXzhj6qxgMErVuXsscMuS
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]
+    Program log: Instruction: TransferChecked
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 6174 of 153944 compute units
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success
+    Program 8PJFAdH2RJ2v1zdME3HU477yvHf7LRheLWd3xxeSbrsZ consumed 53338 of 200000 compute units
+    Program 8PJFAdH2RJ2v1zdME3HU477yvHf7LRheLWd3xxeSbrsZ success
+Transaction executed in slot 61:
+  Signature: Pce6pdNEWDNm4BKpYX4UY32QVVjWGAqzxBHEqPPQYXKVwgCmzYhq8CJk62DGqUtCr15xUCM3e9TaMwww8HxnEXi
+  Status: Ok
+  Log Messages:
+    Program 8PJFAdH2RJ2v1zdME3HU477yvHf7LRheLWd3xxeSbrsZ invoke [1]
+    Program log: Instruction: SubmitProof
+    Program 8PJFAdH2RJ2v1zdME3HU477yvHf7LRheLWd3xxeSbrsZ consumed 5426 of 200000 compute units
+    Program 8PJFAdH2RJ2v1zdME3HU477yvHf7LRheLWd3xxeSbrsZ success
+Transaction executed in slot 62:
+  Signature: Pce6pdNEWDNm4BKpYX4UY32QVVjWGAqzxBHEqPPQYXKVwgCmzYhq8CJk62DGqUtCr15xUCM3e9TaMwww8HxnEXi
+  Status: Ok
+  Log Messages:
+    Program 8PJFAdH2RJ2v1zdME3HU477yvHf7LRheLWd3xxeSbrsZ invoke [1]
+    Program log: Instruction: SubmitProof
+    Program 8PJFAdH2RJ2v1zdME3HU477yvHf7LRheLWd3xxeSbrsZ consumed 5426 of 200000 compute units
+    Program 8PJFAdH2RJ2v1zdME3HU477yvHf7LRheLWd3xxeSbrsZ success
+Transaction executed in slot 62:
+  Signature: 2ManQuzETEqeiPVFNQeM6Fsy9toUoapUNJa6LzyFUBA6mZzQW43nFu8gNH1mGwtXKaVyUBwe52bayMut3BNxkuuc
+  Status: Ok
+  Log Messages:
+    Program 8PJFAdH2RJ2v1zdME3HU477yvHf7LRheLWd3xxeSbrsZ invoke [1]
+    Program log: Instruction: SetMilestoneStatus
+    Program 8PJFAdH2RJ2v1zdME3HU477yvHf7LRheLWd3xxeSbrsZ consumed 16943 of 200000 compute units
+    Program 8PJFAdH2RJ2v1zdME3HU477yvHf7LRheLWd3xxeSbrsZ success
+Transaction executed in slot 63:
+  Signature: 2ManQuzETEqeiPVFNQeM6Fsy9toUoapUNJa6LzyFUBA6mZzQW43nFu8gNH1mGwtXKaVyUBwe52bayMut3BNxkuuc
+  Status: Ok
+  Log Messages:
+    Program 8PJFAdH2RJ2v1zdME3HU477yvHf7LRheLWd3xxeSbrsZ invoke [1]
+    Program log: Instruction: SetMilestoneStatus
+    Program 8PJFAdH2RJ2v1zdME3HU477yvHf7LRheLWd3xxeSbrsZ consumed 16943 of 200000 compute units
+    Program 8PJFAdH2RJ2v1zdME3HU477yvHf7LRheLWd3xxeSbrsZ success
+Transaction executed in slot 63:
+  Signature: 3nuSrRSKKGTZfJpKXmQdPHj5oBfVcqM1LgVCfdQtYjfDSztUkBZo6hmFvXXA4jkBWTKn2kz1ipKkD4FzoHr8ZbhT
+  Status: Ok
+  Log Messages:
+    Program 8PJFAdH2RJ2v1zdME3HU477yvHf7LRheLWd3xxeSbrsZ invoke [1]
+    Program log: Instruction: SetMilestoneStatus
+    Program log: Proposal Debug:
+    Program log: Grant Campaign Key: ALfiN9FxHZrnuJuFXqs4R6LMm2Xn829V9ZGhrKAoJezh
+    Program log: Applicant Key: AUDvwsAtEhzCadDchGho7TyAxxx8RECADpVyv8vNks8x
+    Program log: Proposal Bump: 254
+    Program log: Proposal PDA: 3W27GQYmYgH1DnyucQ1aFA8zchA8DtjpcbksC2wiFQXt
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]
+    Program log: Instruction: TransferChecked
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 6174 of 145996 compute units
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success
+    Program 8PJFAdH2RJ2v1zdME3HU477yvHf7LRheLWd3xxeSbrsZ consumed 61431 of 200000 compute units
+    Program 8PJFAdH2RJ2v1zdME3HU477yvHf7LRheLWd3xxeSbrsZ success
+Transaction executed in slot 64:
+  Signature: 3nuSrRSKKGTZfJpKXmQdPHj5oBfVcqM1LgVCfdQtYjfDSztUkBZo6hmFvXXA4jkBWTKn2kz1ipKkD4FzoHr8ZbhT
+  Status: Ok
+  Log Messages:
+    Program 8PJFAdH2RJ2v1zdME3HU477yvHf7LRheLWd3xxeSbrsZ invoke [1]
+    Program log: Instruction: SetMilestoneStatus
+    Program log: Proposal Debug:
+    Program log: Grant Campaign Key: ALfiN9FxHZrnuJuFXqs4R6LMm2Xn829V9ZGhrKAoJezh
+    Program log: Applicant Key: AUDvwsAtEhzCadDchGho7TyAxxx8RECADpVyv8vNks8x
+    Program log: Proposal Bump: 254
+    Program log: Proposal PDA: 3W27GQYmYgH1DnyucQ1aFA8zchA8DtjpcbksC2wiFQXt
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]
+    Program log: Instruction: TransferChecked
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 6174 of 145996 compute units
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success
+    Program 8PJFAdH2RJ2v1zdME3HU477yvHf7LRheLWd3xxeSbrsZ consumed 61431 of 200000 compute units
+    Program 8PJFAdH2RJ2v1zdME3HU477yvHf7LRheLWd3xxeSbrsZ success
+Transaction executed in slot 65:
+  Signature: 2M9hwvYDc54DSb9TED2cDwfSoB59rxv6zbasCMdx1Y1apz3idC2epTW4gc8Wf45wC2Fdxs2y6tv5MwZaw6GVxuDE
+  Status: Ok
+  Log Messages:
+    Program 8PJFAdH2RJ2v1zdME3HU477yvHf7LRheLWd3xxeSbrsZ invoke [1]
+    Program log: Instruction: CloseCampaign
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]
+    Program log: Instruction: CloseAccount
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 3015 of 186894 compute units
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success
+    Program 8PJFAdH2RJ2v1zdME3HU477yvHf7LRheLWd3xxeSbrsZ consumed 17042 of 200000 compute units
+    Program 8PJFAdH2RJ2v1zdME3HU477yvHf7LRheLWd3xxeSbrsZ success
+Transaction executed in slot 65:
+  Signature: crUqzXsCqpiUg5tdSsJcevsyEssbQzhV7rAqaE6dyJLBMqu3StYmfU59ohC4N6wwVdc8AJgjWvLfUnx95vog98y
+  Status: Ok
+  Log Messages:
+    Program 8PJFAdH2RJ2v1zdME3HU477yvHf7LRheLWd3xxeSbrsZ invoke [1]
+    Program log: Instruction: CreateCampaign
+    Program 11111111111111111111111111111111 invoke [2]
+    Program 11111111111111111111111111111111 success
+    Program 11111111111111111111111111111111 invoke [2]
+    Program 11111111111111111111111111111111 success
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]
+    Program log: Instruction: InitializeAccount3
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 4214 of 179710 compute units
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]
+    Program log: Instruction: TransferChecked
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 6269 of 170531 compute units
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success
+    Program 8PJFAdH2RJ2v1zdME3HU477yvHf7LRheLWd3xxeSbrsZ consumed 37050 of 200000 compute units
+    Program 8PJFAdH2RJ2v1zdME3HU477yvHf7LRheLWd3xxeSbrsZ success
+Transaction executed in slot 66:
+  Signature: crUqzXsCqpiUg5tdSsJcevsyEssbQzhV7rAqaE6dyJLBMqu3StYmfU59ohC4N6wwVdc8AJgjWvLfUnx95vog98y
+  Status: Ok
+  Log Messages:
+    Program 8PJFAdH2RJ2v1zdME3HU477yvHf7LRheLWd3xxeSbrsZ invoke [1]
+    Program log: Instruction: CreateCampaign
+    Program 11111111111111111111111111111111 invoke [2]
+    Program 11111111111111111111111111111111 success
+    Program 11111111111111111111111111111111 invoke [2]
+    Program 11111111111111111111111111111111 success
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]
+    Program log: Instruction: InitializeAccount3
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 4214 of 179710 compute units
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]
+    Program log: Instruction: TransferChecked
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 6269 of 170531 compute units
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success
+    Program 8PJFAdH2RJ2v1zdME3HU477yvHf7LRheLWd3xxeSbrsZ consumed 37050 of 200000 compute units
+    Program 8PJFAdH2RJ2v1zdME3HU477yvHf7LRheLWd3xxeSbrsZ success
+Transaction executed in slot 66:
+  Signature: 4fzyueMJJtUf1UwPit7KFDNuCvmghBSjDHVyuHbpDvnWJChELwFA3CbkKt1JSedVxF5CzDQ7NXYRJe88cLbv9rA4
+  Status: Error processing Instruction 0: custom program error: 0x7d3
+  Log Messages:
+    Program 8PJFAdH2RJ2v1zdME3HU477yvHf7LRheLWd3xxeSbrsZ invoke [1]
+    Program log: Instruction: UpdateProposalStatus
+    Program log: AnchorError caused by account: proposal. Error Code: ConstraintRaw. Error Number: 2003. Error Message: A raw constraint was violated.
+    Program 8PJFAdH2RJ2v1zdME3HU477yvHf7LRheLWd3xxeSbrsZ consumed 10752 of 200000 compute units
+    Program 8PJFAdH2RJ2v1zdME3HU477yvHf7LRheLWd3xxeSbrsZ failed: custom program error: 0x7d3
