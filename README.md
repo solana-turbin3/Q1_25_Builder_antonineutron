@@ -31,7 +31,7 @@ Learning to interact with Solana using TypeScript. Below are the completed tasks
     - [Transaction](https://explorer.solana.com/tx/42XR4cYWmCR8jhd5DFKJnT68AkCf6axNB7wxxgTe7gKD55QUjxzZyreZm48dwg4gEozufeq615vtJ8zohXA8MrGB?cluster=devnet)
 
 ## Rust (Weeks 2-6)
-Rust programs developed in the `./rust_programs/` folder:
+Rust programs developed in the `rust_programs/` folder:
 1. Vault
 2. Escrow
 3. Marketplace
@@ -40,7 +40,7 @@ Rust programs developed in the `./rust_programs/` folder:
 
 
 ## Capstone
-The `./capstone` folder contains all things related to my capstone program called TITA
+The `capstone` folder contains all things related to my capstone program called TITA
 TITA is a grant distribution platform built using Rust and Typescript
 
 ### The solana program is deployment address on Devnet is `8PJFAdH2RJ2v1zdME3HU477yvHf7LRheLWd3xxeSbrsZ`
